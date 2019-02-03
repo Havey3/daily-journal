@@ -16,7 +16,7 @@
     <form action=""></form>
      <fieldset class="journalDate">
          <label class="attempt" for="JournalDate">Date of Entry</label>
-         <input type="date" name="JournalDate" id="JournalDate">
+         <input type="date" name="JournalDate" id="journalDate">
      </fieldset>
 
      <!-- Concepts -->
@@ -30,7 +30,7 @@
      <form action=""></form>
      <fieldset class="journalEntry">
          <label for="journalEntry">Journal Entry</label>
-         <textarea name="textarea" id="textarea" cols="21" rows="3"></textarea>
+         <textarea name="textarea" id="journalEntry" cols="21" rows="3"></textarea>
      </fieldset>
 
      <!-- Mood -->
@@ -44,7 +44,9 @@
         </select>
     </fieldset>
 
-    <button type="submit">Record Journal Entry</button>
+
+    <button id="submitButton" type="submit">Log Journal Entry</button>
+    <article id="entryLog"></article>
 
     <script src="journal.js"></script>
 </body>
